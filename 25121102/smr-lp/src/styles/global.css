@@ -1,6 +1,0 @@
-@import './variables.css';
-
-/* Global styles can go here if needed, but prefer scoped or variable-based approaches */
-html {
-  scroll-behavior: smooth;
-}
