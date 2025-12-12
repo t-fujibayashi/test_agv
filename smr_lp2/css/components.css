@@ -1,0 +1,107 @@
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background-color: var(--color-cta-orange);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(255, 69, 0, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-cta-orange-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 69, 0, 0.4);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border-color: var(--color-accent-cyan);
+  color: var(--color-accent-cyan);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-accent-cyan-dim);
+  box-shadow: 0 0 15px var(--color-accent-cyan-dim);
+}
+
+/* Cards */
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: var(--spacing-md);
+  transition: all var(--transition-smooth);
+}
+
+.card:hover {
+  border-color: var(--color-accent-cyan);
+  background: rgba(0, 255, 255, 0.02);
+  transform: translateY(-5px);
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--color-accent-cyan-dim);
+  color: var(--color-accent-cyan);
+  border: 1px solid var(--color-accent-cyan);
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Accordion (FAQ) */
+.accordion-item {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.accordion-header {
+  width: 100%;
+  text-align: left;
+  padding: var(--spacing-md) 0;
+  background: none;
+  border: none;
+  color: var(--color-text-main);
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-smooth);
+}
+
+.accordion-content p {
+  padding-bottom: var(--spacing-md);
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 200px; /* Approximate height */
+}
+
+.accordion-icon {
+  transition: transform var(--transition-fast);
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(180deg);
+}

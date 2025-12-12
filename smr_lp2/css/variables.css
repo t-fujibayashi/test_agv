@@ -1,0 +1,31 @@
+:root {
+  /* Colors */
+  --color-bg-main: #000000;
+  --color-bg-sub: #0a0a0a;
+  --color-text-main: #ffffff;
+  --color-text-sub: #9ca3af; /* Gray-400 */
+  --color-accent-cyan: #00ffff;
+  --color-accent-cyan-dim: rgba(0, 255, 255, 0.1);
+  --color-cta-orange: #ff4500;
+  --color-cta-orange-hover: #ff5722;
+  --color-border: #333333;
+
+  /* Fonts */
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Noto Sans JP', sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+
+  /* Layout */
+  --container-width: 1280px;
+  --header-height: 80px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
